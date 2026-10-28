@@ -21,23 +21,24 @@ A Python script that generates dynamic UPI payment QR codes for major Indian pay
    ```
 
 2. **Install required dependencies**:
-   bash
+   ```bash
    pip install -r requirements.txt
-   
+   ```
    *(or `pip install qrcode[pil]`)*
 
-
+---
 
 ## 💻 Usage
 
 Run the script using Python:
 
-bash
+```bash
 python takepaymentonline.py
-
+```
 
 When prompted, enter your UPI ID (e.g. `yourname@oksbi` or `yourname@upi`). The script will generate, save, and display the payment QR codes.
 
+---
 
 ## ⚙️ Customization
 
@@ -47,4 +48,3 @@ Inside [`takepaymentonline.py`](takepaymentonline.py), you can customize the pay
 # Format: upi://pay?pa=UPI_ID&pn=Recipient%20Name&am=Amount&cu=CURRENCY&tn=MESSAGE
 phonepe_url = f'upi://pay?pa={upi_id}&pn=Your%20Name&mc=1234'
 ```
-
